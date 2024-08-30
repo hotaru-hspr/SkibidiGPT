@@ -47,12 +47,12 @@
 
   function handleEnter(event) {
     if (event.key === "Enter" && inputText != "") {
-      document.getElementById("welcome").style.display = 'none';
       handleSend();
     }
   }
 
   function handleSend() {
+    document.getElementById("welcome").style.display = 'none';
     if (inputText.trim()) { 
       askLLM(inputText);
       inputText = "";
