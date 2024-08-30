@@ -55,7 +55,7 @@
   }
 </script>
 
-<div class="flex flex-col h-screen w-screen mt-5 md:mt-0">
+<div class="flex flex-col h-screen w-screen overflow-hidden mt-5 md:mt-0">
   <div class="ml-5 mt-5 md:ml-10 md:mt-10 text-xl flex justify-between items-center">
     <a class="hover:text-blue-300" href="https://www.youtube.com/shorts/tzD9OxAHtzU">👨🏻🚽 <b>Skibidi</b>GPT</a>
     <a href="https://github.com/hotaru-hspr/SkibidiGPT">
@@ -66,7 +66,7 @@
   </div>  
 
   <div class="relative flex flex-col h-full overflow-y-auto p-4 bg-gradient-to-b from-[#EDF0FF]/5 to-transparent mt-3 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 rounded-3xl">
-    <div class="flex-1">
+    <div class="flex-1 overflow-y-auto">
       {#each convos as convo}
         <div class={`mb-4 ${convo.type === 'user' ? 'text-right' : 'text-left'}`}>
           <div class={`flex items-start ${convo.type === 'user' ? 'justify-end' : 'justify-start'}`}>
@@ -115,6 +115,7 @@
     </div>  
   </div>
 </div>
+
 
 
 <style lang="postcss">
