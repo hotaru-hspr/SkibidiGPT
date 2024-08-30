@@ -96,20 +96,18 @@
     </div>
   </div>
 
-  <div>
-    <div class="p-2 mt-1 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 mb-5 rounded-xl flex items-center">
-      <input 
-        class="bg-[#1E3345] flex-1 px-4 py-2 rounded-xl outline-none" 
-        placeholder="🚽 Feelin' skibidi? Let's yap!" 
-        on:keypress={handleEnter}
-        bind:value={inputText} 
-      />
-      <button 
-        class="ml-2 rounded-xl p-2 bg-[#0A2234] hover:bg-[#EDF0FF]/10 items-center" 
-        on:click={handleSend}>
-        <img src="send.webp" alt="Send" class="w-auto h-5 ml-0.5" />
-      </button>
-    </div>
+  <div class="p-2 mt-0.5 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 mb-5 rounded-xl flex items-center">
+    <input 
+      class="bg-[#1E3345] flex-1 px-4 py-2 rounded-xl outline-none" 
+      placeholder="🚽 Feelin' skibidi? Let's yap!" 
+      on:keypress={handleEnter}
+      bind:value={inputText} 
+    />
+    <button 
+      class="ml-2 rounded-xl p-2 bg-[#0A2234] hover:bg-[#EDF0FF]/10 items-center" 
+      on:click={handleSend}>
+      <img src="send.webp" alt="Send" class="w-auto h-5 ml-0.5" />
+    </button>
   </div>
 </div>
 
