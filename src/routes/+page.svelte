@@ -115,3 +115,18 @@
     </div>  
   </div>
 </div>
+
+<style lang="postcss">
+  :global(html, body) {
+    background: linear-gradient(180deg, #002F4A, #000D1C);
+    background-attachment: fixed;
+    height: 100%;
+  }
+
+  :global(body) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+</style>
