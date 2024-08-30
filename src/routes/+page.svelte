@@ -65,7 +65,7 @@
     </a>
   </div>  
 
-  <div class="relative flex flex-col h-full overflow-y-auto p-2 bg-gradient-to-b from-[#EDF0FF]/5 to-transparent mt-3 ml-3 mr-3 rounded-3xl md:p-4 md:mt-10 md:ml-10 md:mr-10">
+  <div class="relative flex flex-col h-full overflow-y-auto p-4 bg-gradient-to-b from-[#EDF0FF]/5 to-transparent mt-3 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 rounded-3xl">
     <div class="flex-1">
       {#each convos as convo}
         <div class="mb-4 ${convo.type === 'user' ? 'text-right' : ''}">
