@@ -65,7 +65,7 @@
     </a>
   </div>  
 
-  <div class="relative flex flex-col h-full overflow-y-auto p-4 bg-gradient-to-b from-[#EDF0FF]/5 to-transparent mt-3 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 rounded-3xl">
+  <div class="relative flex flex-col h-3/5 overflow-y-auto p-4 bg-gradient-to-b from-[#EDF0FF]/5 to-transparent mt-3 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 rounded-3xl">
     <div class="flex-1">
       {#each convos as convo}
         <div class={`mb-4 ${convo.type === 'user' ? 'text-right' : 'text-left'}`}>
@@ -96,7 +96,7 @@
     </div>
   </div>
 
-  <div class="p-2 mt-0 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 rounded-xl flex items-center">
+  <div class="p-2 mt-0 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 md:mt-20 rounded-xl flex items-center">
     <input 
       class="bg-[#1E3345] flex-1 px-4 py-2 rounded-xl outline-none" 
       placeholder="🚽 Feelin' skibidi? Let's yap!" 
