@@ -55,7 +55,7 @@
   }
 </script>
 
-<div class="flex flex-col h-screen w-screen">
+<div class="flex flex-col h-screen w-screen mt-10 md:mt-0">
   <div class="ml-5 mt-5 md:ml-10 md:mt-10 text-xl flex justify-between items-center">
     <a class="hover:text-blue-300" href="https://www.youtube.com/shorts/tzD9OxAHtzU">👨🏻🚽 <b>Skibidi</b>GPT</a>
     <a href="https://github.com/hotaru-hspr/SkibidiGPT">
@@ -97,7 +97,7 @@
   </div>
 
   <div>
-    <div class="p-2 mt-5 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 mb-5 rounded-xl flex items-center">
+    <div class="p-2 mt-1 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 mb-5 rounded-xl flex items-center">
       <input 
         class="bg-[#1E3345] flex-1 px-4 py-2 rounded-xl outline-none" 
         placeholder="🚽 Feelin' skibidi? Let's yap!" 
@@ -110,9 +110,6 @@
         <img src="send.webp" alt="Send" class="w-auto h-5 ml-0.5" />
       </button>
     </div>
-    <div class="mb-4 text-gray-500 text-center">
-      Warning: Brainrot ahead. Proceed with caution!
-    </div>  
   </div>
 </div>
 
