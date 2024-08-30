@@ -1,5 +1,20 @@
 <script>
+  import { onMount } from "svelte";
+  import { GoogleGenerativeAI } from "@google/generative-ai";
 
+  onMount(async () => {
+    const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    const fetchData = async () => {
+      const prompt = "Hello, what do you know about skibidi toilet?";
+      const result = await model.generateContent("You're a bot tuned to talk in Gen-Z slang and lingo, referencing popular Gen-Z things like Skibidi Toilet, Sigma males, memes, and other things termed as Brainrot. Answer this assuming yourself to be a Gen-Z Skibidi Sigma: '" + prompt + "'");
+      const text = await result.response.text();
+      console.log(text);
+    };
+
+    fetchData();
+  });
 </script>
 
 <div class="flex flex-col h-screen w-screen">
@@ -18,6 +33,7 @@
       <p class="p-2 rounded-lg inline-block">Brr Skibidi Dop Dop Dop Yes Yes</p>
     </div>
   </div>
+
   <div class="p-2 m-10 rounded-xl flex items-center">
     <input class="border border-white bg-[#1E3345] flex-1 px-4 py-2 rounded-xl" placeholder="🚽 Feelin' skibidi? Let's yap!"/>
     <button class="ml-2 rounded-xl p-2 bg-[#0A2234] w-16">Send</button>
