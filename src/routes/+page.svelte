@@ -66,7 +66,6 @@
 </script>
 
 <div class="flex flex-col h-screen w-screen">
-  <!-- Here -->
   <div class="ml-5 mt-5 md:ml-10 md:mt-10 text-xl flex justify-between items-center">
     <a class="hover:text-blue-300" href="https://www.youtube.com/shorts/tzD9OxAHtzU">👨🏻🚽 <b>Skibidi</b>GPT</a>
     <a href="https://github.com/hotaru-hspr/SkibidiGPT">
@@ -79,16 +78,16 @@
   <div class="relative flex flex-col h-full overflow-y-auto p-4 bg-gradient-to-b from-[#EDF0FF]/5 to-transparent mt-3 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 rounded-3xl">
     <div class="flex-1">
       {#each convos as convo}
-        <div class={`mb-4 ${convo.type === 'user' ? 'text-right' : ''}`}>
+        <div class={`mb-4 ${convo.type === 'user' ? 'text-right' : 'text-left'}`}>
           <div class={`flex items-start ${convo.type === 'user' ? 'justify-end' : 'justify-start'}`}>
             {#if convo.type === 'bot'}
-              <img src="bot.webp" alt="Bot" class="w-6 h-6 rounded-full mr-2" style="align-self: flex-start;" />
+              <img src="bot.webp" alt="Bot" class="w-6 h-6 rounded-full mr-2" />
             {/if}
-            <p class="text-gray-300 px-4 py-2 bg-[#EDF0FF]/10 rounded-xl inline-block ${convo.type === 'user' ? '' : 'bg-[#EDF0FF]/20'} max-w-[700px]" style="max-width: 60%;">
+            <p class="text-gray-300 px-4 py-2 bg-[#EDF0FF]/10 rounded-xl inline-block ${convo.type === 'user' ? 'bg-[#EDF0FF]/10' : 'bg-[#EDF0FF]/20'} max-w-[700px]" style="max-width: 60%;">
               {convo.text}
             </p>
             {#if convo.type === 'user'}
-              <img src="user.webp" alt="User" class="w-6 h-6 rounded-full ml-2" style="align-self: flex-start;" />
+              <img src="user.webp" alt="User" class="w-6 h-6 rounded-full ml-2" />
             {/if}
           </div>
         </div>
@@ -108,8 +107,7 @@
   </div>
 
   <div>
-    <!-- Here -->
-    <div class="p-2 mt-10 ml-10 mr-10 mb-5 rounded-xl flex items-center">
+    <div class="p-2 mt-5 mr-3 ml-3 md:mt-10 md:ml-10 md:mr-10 mb-5 rounded-xl flex items-center">
       <input 
         class="bg-[#1E3345] flex-1 px-4 py-2 rounded-xl outline-none" 
         placeholder="🚽 Feelin' skibidi? Let's yap!" 
@@ -127,6 +125,7 @@
     </div>  
   </div>
 </div>
+
 
 <style lang="postcss">
   :global(html, body) {
