@@ -55,7 +55,7 @@
   }
 </script>
 
-<div class="flex flex-col h-screen w-screen">
+<div class="flex flex-col h-screen w-screen mt-5 md:mt-0">
   <div class="ml-5 mt-5 md:ml-10 md:mt-10 text-xl flex justify-between items-center">
     <a class="hover:text-blue-300" href="https://www.youtube.com/shorts/tzD9OxAHtzU">👨🏻🚽 <b>Skibidi</b>GPT</a>
     <a href="https://github.com/hotaru-hspr/SkibidiGPT">
@@ -121,7 +121,8 @@
   :global(html, body) {
     background: linear-gradient(180deg, #002F4A, #000D1C);
     background-attachment: fixed;
-    height: 100%;
+    height: 100vh;
+    height: 100dvh;
   }
 
   :global(body) {
