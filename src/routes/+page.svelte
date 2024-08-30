@@ -55,7 +55,7 @@
   }
 </script>
 
-<div class="flex flex-col h-screen w-screen mt-15 md:mt-0 overflow-hidden">
+<div class="flex flex-col h-screen w-screen mt-16 md:mt-0 overflow-hidden">
   <div class="ml-5 mt-5 md:ml-10 md:mt-10 text-xl flex justify-between items-center">
     <a class="hover:text-blue-300" href="https://www.youtube.com/shorts/tzD9OxAHtzU">👨🏻🚽 <b>Skibidi</b>GPT</a>
     <a href="https://github.com/hotaru-hspr/SkibidiGPT">
