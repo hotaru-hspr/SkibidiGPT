@@ -1,10 +1,12 @@
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
+import { GOOGLE_API_KEY } from "$env/static/private";
 
 const llm = new ChatGoogleGenerativeAI({
   model: "gemini-1.5-pro",
   temperature: 0,
   maxRetries: 2,
+  apiKey: GOOGLE_API_KEY,
   safetySettings: [
     {
       category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
