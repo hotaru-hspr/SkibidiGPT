@@ -28,6 +28,7 @@
       convos = [...convos.slice(0, -1), { type: "bot", text: responseText }];
       scrollToBottom();
     } catch (error) {
+      console.log(error);
       convos = [
         ...convos.slice(0, -1),
         { type: "bot", text: "Uh oh, we got lost there..." },
